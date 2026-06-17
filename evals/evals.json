@@ -1,0 +1,117 @@
+{
+  "skill_name": "wisdom-first",
+  "notes": "Positives test whether the un-hardcoded skill surfaces the canonical book for each domain (the generalization test), gives an apt distillation, and actually applies the framework downstream. Negatives are near-misses that should NOT trigger the full wisdom-first flow.",
+  "evals": [
+    {
+      "id": 1,
+      "domain": "speech / communication strategy",
+      "prompt": "下周我要在公司全员大会上做一个 20 分钟的演讲，介绍我们团队明年的方向。我特别紧张，不知道怎么开场、怎么让大家记住我讲的东西。帮我想想这个演讲怎么准备。",
+      "expected_output": "Recommends As We Speak (Peter Meyers & Shann Nix Jones) or a clearly canonical public-speaking work; distills its core ideas (content/delivery/state, storytelling, presence); then builds an actual speech plan using those ideas.",
+      "target_canon": "As We Speak (Peter Meyers & Shann Nix Jones)",
+      "expectations": [
+        "Recommends As We Speak, or names it among 1-2 canonical public-speaking books",
+        "Gives a concise, accurate distillation of the framework's core moves",
+        "The speech plan visibly applies the framework (opening, memorability) rather than generic tips",
+        "Recommends the user read the book to go deeper"
+      ]
+    },
+    {
+      "id": 2,
+      "domain": "business / org strategy",
+      "prompt": "I run a mid-size B2B SaaS company. We're spread too thin across five products and growth has stalled. I need to figure out our strategy for next year. Where do I even start?",
+      "expected_output": "Recommends Playing to Win (A.G. Lafley & Roger Martin); distills the five strategic choices cascade (winning aspiration, where to play, how to win, capabilities, management systems); then applies the cascade to the user's stalled-growth situation.",
+      "target_canon": "Playing to Win (A.G. Lafley & Roger Martin)",
+      "expectations": [
+        "Recommends Playing to Win (Lafley & Martin) or names it as the canonical strategy book here",
+        "Distills the strategy cascade / where-to-play-how-to-win accurately",
+        "Applies the cascade concretely to the five-product, stalled-growth problem",
+        "Recommends reading the book"
+      ]
+    },
+    {
+      "id": 3,
+      "domain": "life / work confusion",
+      "prompt": "我最近特别迷茫。工作干了五年感觉每天都在原地打转，生活也乱糟糟的，时间永远不够用，对什么都提不起劲。不知道该怎么调整。",
+      "expected_output": "Leads with warmth; recommends The 7 Habits of Highly Effective People (Stephen Covey); distills relevant habits (be proactive, begin with the end in mind, put first things first, circle of influence); then helps the user apply them to their specific rut.",
+      "target_canon": "The 7 Habits of Highly Effective People (Stephen Covey)",
+      "expectations": [
+        "Responds with empathy before jumping to frameworks",
+        "Recommends The 7 Habits of Highly Effective People (Covey)",
+        "Distills relevant habits accurately (e.g. proactivity, end in mind, first things first)",
+        "Applies the habits to the user's actual feeling-stuck situation"
+      ]
+    },
+    {
+      "id": 4,
+      "domain": "interpersonal conflict",
+      "prompt": "我和我老婆最近经常因为一些小事吵架，比如家务分工、孩子教育。每次都从小事升级成互相指责，谁也不让谁。我想改善我们的沟通，但不知道怎么开口。",
+      "expected_output": "Leads with empathy; recommends Nonviolent Communication (Marshall Rosenberg); distills the four components (observations, feelings, needs, requests); then scripts how the user might actually open a conversation with their spouse using NVC.",
+      "target_canon": "Nonviolent Communication (Marshall Rosenberg)",
+      "expectations": [
+        "Responds with empathy and does not take sides clinically",
+        "Recommends Nonviolent Communication (Marshall Rosenberg)",
+        "Distills the four components: observation, feeling, need, request",
+        "Provides concrete NVC-structured phrasing for the user's actual situation"
+      ]
+    },
+    {
+      "id": 5,
+      "domain": "business writing / structured communication",
+      "prompt": "我要给老板写一封邮件，汇报我们项目延期的情况和接下来的补救方案。内容有点多有点乱，我一写就啰嗦，老板看了肯定抓不住重点。怎么写才清楚？",
+      "expected_output": "Recommends The Pyramid Principle (Barbara Minto) and the MECE principle; distills top-down/answer-first structure and MECE grouping; then restructures the user's delay-report email using the pyramid.",
+      "target_canon": "The Pyramid Principle (Barbara Minto) + MECE",
+      "expectations": [
+        "Recommends The Pyramid Principle (Barbara Minto)",
+        "Explains MECE (mutually exclusive, collectively exhaustive)",
+        "Distills answer-first / top-down structuring accurately",
+        "Restructures the user's actual email using the pyramid structure"
+      ]
+    },
+    {
+      "id": 6,
+      "domain": "negotiation (generalization test, not in skill body)",
+      "prompt": "我拿到一个新 offer，想用它去找现在的老板谈加薪。但我怕谈崩了反而尴尬，也不知道开价多少合适。帮我想想这次加薪谈话怎么谈。",
+      "expected_output": "Surfaces principled negotiation — ideally Getting to Yes (Fisher & Ury) and/or Never Split the Difference (Voss); distills BATNA / interests-vs-positions; then plans the raise conversation around the user's BATNA (the competing offer).",
+      "target_canon": "Getting to Yes (Fisher & Ury) and/or Never Split the Difference (Chris Voss)",
+      "expectations": [
+        "Recommends a canonical negotiation book (Getting to Yes and/or Never Split the Difference)",
+        "Introduces BATNA and interests-vs-positions",
+        "Plans the raise conversation explicitly using the competing offer as BATNA"
+      ]
+    },
+    {
+      "id": 7,
+      "domain": "habit / personal productivity (generalization test, not in skill body)",
+      "prompt": "我一直想养成早起跑步的习惯，但每次坚持不了一周就放弃了。试过很多次都失败。有什么办法能真的坚持下来吗？",
+      "expected_output": "Surfaces Atomic Habits (James Clear) or a canonical habit-formation work; distills the four laws / systems-over-goals / friction reduction; then designs a concrete habit system for early-morning running.",
+      "target_canon": "Atomic Habits (James Clear)",
+      "expectations": [
+        "Recommends Atomic Habits (James Clear) or a clearly canonical habits book",
+        "Distills the four laws or systems-over-goals accurately",
+        "Designs a concrete, friction-reducing plan for the running habit"
+      ]
+    },
+    {
+      "id": 8,
+      "domain": "NEGATIVE — factual lookup near-miss",
+      "prompt": "A.G. Lafley 一共写过哪几本书？",
+      "expected_output": "A direct factual answer. Should NOT launch the full wisdom-first framework-and-book flow — this is a lookup about an author, not a consulting task.",
+      "should_trigger": false,
+      "expectations": [
+        "Answers the factual question directly",
+        "Does NOT run the full frame-distill-recommend-apply sequence"
+      ]
+    },
+    {
+      "id": 9,
+      "domain": "NEGATIVE — mechanical task near-miss",
+      "prompt": "帮我把这段 CSV 转成 JSON 格式，第一行是表头。",
+      "expected_output": "Just does the conversion. No framework, no book recommendation.",
+      "should_trigger": false,
+      "expectations": [
+        "Performs the conversion directly",
+        "Does NOT recommend any framework or book"
+      ]
+    }
+  ]
+}
