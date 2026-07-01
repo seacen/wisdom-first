@@ -4,9 +4,19 @@
 
 **[中文版 README →](README.zh-CN.md)**
 
-`wisdom-first` is an [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) for Claude Code and other AI agents. Before your assistant improvises an answer to a question that deserves real thought, it reaches for the best thinking humanity has already done on that *kind* of problem: it names two or three complementary frameworks, recommends the best books, distills them, and only then solves your problem **through** those lenses.
+`wisdom-first` is an [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) — a portable capability that any AI agent can load. Before your assistant improvises an answer to a question that deserves real thought, it reaches for the best thinking humanity has already done on that *kind* of problem: it names two or three complementary frameworks, recommends the best books, distills them, and only then solves your problem **through** those lenses.
 
 *A skill that upgrades how an AI thinks, not just what it knows.*
+
+## Why this matters: it grows *your* thinking, not just the AI's
+
+The easy path with AI is to hand over your judgment and take the answer on faith. You get output — but you're left *knowing what without knowing why*, a little more dependent each time.
+
+`wisdom-first` is built to do the opposite. Because it names the actual frameworks, distills the moves that carry the weight, and points you back to the source books, every answer doubles as a lesson. You walk away with durable mental models and a reading list you can return to — not just a verdict for today.
+
+So the skill isn't only about making the AI reason more systematically. It's about widening *your own* map of how the world works: turning each hard question into a chance to expand the edges of your understanding, so you keep growing your judgment instead of outsourcing it. The AI does the retrieval and the synthesis; **you keep the wisdom.**
+
+That's the whole bet — an AI that makes you wiser, not one that makes you dependent.
 
 ## Install
 
@@ -14,24 +24,9 @@ Using the open [`skills`](https://github.com/vercel-labs/skills) CLI — no inst
 
 ```bash
 npx skills add seacen/wisdom-first
-
-# target a specific agent
-npx skills add seacen/wisdom-first -a claude-code
-
-# inspect before installing
-npx skills add seacen/wisdom-first --list
 ```
 
-Then start a fresh agent session — it picks up `SKILL.md` automatically. The `skills` CLI auto-detects Claude Code, Cursor, Codex, OpenCode, and many more.
-
-<details><summary>Manual install (clone & symlink)</summary>
-
-```bash
-git clone https://github.com/seacen/wisdom-first.git
-ln -s "$PWD/wisdom-first" ~/.claude/skills/wisdom-first
-```
-
-</details>
+Then start a fresh agent session — it picks up `SKILL.md` automatically. The `skills` CLI auto-detects whichever agent you're using and installs to the right place.
 
 ## What it does
 
@@ -95,5 +90,5 @@ evals/
 
 ## Acknowledgements
 
-- Authored as an [Anthropic Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills).
+- Built as an [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) — the open format for extending AI agents.
 - Installable through the open [`skills` CLI](https://github.com/vercel-labs/skills) by Vercel Labs.
