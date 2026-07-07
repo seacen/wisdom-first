@@ -40,7 +40,7 @@ It triggers on its own for advisory / long-horizon work, or call it explicitly w
 
 ## What makes it interesting
 
-The skill contains **no lookup table of "topic → book."** Hard-coding titles would make it brittle and impossible to generalize. Instead, its core ([`references/the-taste.md`](references/the-taste.md)) is **pure, general *taste*** — a handful of domain-blind judgments about what makes one body of thought better than another for a given need:
+The skill contains **no lookup table of "topic → book."** Hard-coding titles would make it brittle and impossible to generalize. Instead, its core ([`references/the-taste.md`](skills/wisdom-first/references/the-taste.md)) is **pure, general *taste*** — a handful of domain-blind judgments about what makes one body of thought better than another for a given need:
 
 - diagnose the **live need** (and notice when the real block is nerve and state, not content);
 - match the **scope** of the wisdom to the scope of the problem;
@@ -51,7 +51,7 @@ From those judgments alone, the right canonical works fall out of the model's ow
 
 ### The author's shelf (optional taste layer)
 
-A few excellent books sit too quietly in a model's "prior" to be reached by even perfect general taste. [`references/authors-shelf.md`](references/authors-shelf.md) lets the author hand-seed a few personal favorites as a **tie-break only** — never overriding fit, never adding a domain. It's a way to pass a point of view about what's good along to whoever installs the skill. Fork it and make it your own shelf.
+A few excellent books sit too quietly in a model's "prior" to be reached by even perfect general taste. [`references/authors-shelf.md`](skills/wisdom-first/references/authors-shelf.md) lets the author hand-seed a few personal favorites as a **tie-break only** — never overriding fit, never adding a domain. It's a way to pass a point of view about what's good along to whoever installs the skill. Fork it and make it your own shelf.
 
 ## Examples
 
@@ -75,11 +75,13 @@ The skill was never given a "topic → book" list — these picks fall out of it
 ## Layout
 
 ```
-SKILL.md                      # trigger + the 3-step sequence + output shape
-references/
-├── the-taste.md              # the core: 8 pure, domain-blind selection judgments
-├── authors-shelf.md          # optional personal-taste tie-break layer
-└── applying-via-workflow.md  # escalating the "solve" step to a multi-agent Workflow
+skills/wisdom-first/
+├── SKILL.md                  # trigger + the 3-step sequence + output shape
+└── references/
+    ├── the-taste.md          # the core: 8 pure, domain-blind selection judgments
+    ├── authors-shelf.md      # optional personal-taste tie-break layer
+    └── applying-via-workflow.md  # escalating the "solve" step to a multi-agent Workflow
+.claude-plugin/plugin.json     # Claude Code plugin manifest
 evals/
 └── evals.json                # acceptance scenarios
 ```

@@ -40,7 +40,7 @@ npx skills add seacen/wisdom-first
 
 ## 有意思的地方
 
-这个 skill 里**没有任何「领域 → 书」的对照表**。把书名写死，只会让它又脆又死板、根本无法泛化。它的核心（[`references/the-taste.md`](references/the-taste.md)）是一套**纯粹而通用的「品味」**——几条与具体领域无关的判断，用来衡量：针对某个需求，哪一套思考比另一套更好。
+这个 skill 里**没有任何「领域 → 书」的对照表**。把书名写死，只会让它又脆又死板、根本无法泛化。它的核心（[`references/the-taste.md`](skills/wisdom-first/references/the-taste.md)）是一套**纯粹而通用的「品味」**——几条与具体领域无关的判断，用来衡量：针对某个需求，哪一套思考比另一套更好。
 
 - 先诊断**真实的需求**（并且认出：真正卡住人的，往往是临场状态和心气，而不是内容本身）；
 - 让智慧的**覆盖面**去匹配问题的大小；
@@ -51,7 +51,7 @@ npx skills add seacen/wisdom-first
 
 ### 作者的书架（可选的偏好层）
 
-有些极好的书，在模型的「先验」里太安静了，再完美的通用品味也未必每次都稳稳够到它们。[`references/authors-shelf.md`](references/authors-shelf.md) 让作者亲手埋进几本私藏偏爱，**仅在同级候选之间用来打破平局**——绝不会压过「是否契合」，也绝不会硬塞进一个不搭的领域。这是一种把「我认为什么才算好」的眼光，传给每一个安装者的方式。欢迎 fork 它，换成你自己的书架。
+有些极好的书，在模型的「先验」里太安静了，再完美的通用品味也未必每次都稳稳够到它们。[`references/authors-shelf.md`](skills/wisdom-first/references/authors-shelf.md) 让作者亲手埋进几本私藏偏爱，**仅在同级候选之间用来打破平局**——绝不会压过「是否契合」，也绝不会硬塞进一个不搭的领域。这是一种把「我认为什么才算好」的眼光，传给每一个安装者的方式。欢迎 fork 它，换成你自己的书架。
 
 ## 示例
 
@@ -75,11 +75,13 @@ npx skills add seacen/wisdom-first
 ## 目录结构
 
 ```
-SKILL.md                      # 触发条件 + 三步法 + 输出形态
-references/
-├── the-taste.md              # 核心：8 条与领域无关的纯通用选择判断
-├── authors-shelf.md          # 可选的个人偏好层（仅用于打破平局）
-└── applying-via-workflow.md  # 把「解题」这一步升级为多智能体 Workflow
+skills/wisdom-first/
+├── SKILL.md                  # 触发条件 + 三步法 + 输出形态
+└── references/
+    ├── the-taste.md          # 核心：8 条与领域无关的纯通用选择判断
+    ├── authors-shelf.md      # 可选的个人偏好层（仅用于打破平局）
+    └── applying-via-workflow.md  # 把「解题」这一步升级为多智能体 Workflow
+.claude-plugin/plugin.json     # Claude Code 插件清单
 evals/
 └── evals.json                # 验收场景
 ```
