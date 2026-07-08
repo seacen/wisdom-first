@@ -6,13 +6,15 @@ A thin open book with a gilt fore-edge; a golden diamond rises from its spine, t
 
 | File | Use on | What it is |
 | --- | --- | --- |
-| `logo.svg` | light backgrounds | mark only — ink `#1B2C40` + gilt `#B8862F` |
-| `logo-dark.svg` | dark backgrounds | mark only — paper `#EFE8D8` + gilt `#E3B054` |
-| `logo-wordmark.svg` | light backgrounds | mark + "wisdom-first" wordmark |
-| `logo-wordmark-dark.svg` | dark backgrounds | mark + wordmark |
-| `logo-mono-ink.svg` | light, one-color print | single-color ink |
-| `logo-mono-gold.svg` | dark, foil / watermark | single-color gilt |
-| `png/` | anywhere SVG won't do | transparent PNGs — mark at 16–1024 px, wordmark at 600/1200/2400 px wide |
+| `logo.svg` | light backgrounds | mark only, **1:1 square** — ink `#1B2C40` + gilt `#B8862F` |
+| `logo-dark.svg` | dark backgrounds | mark only, **1:1 square** — paper `#EFE8D8` + gilt `#E3B054` |
+| `logo-wordmark.svg` | light backgrounds | mark + "wisdom-first" wordmark, wide lockup (not square — this is a horizontal lockup, not an icon) |
+| `logo-wordmark-dark.svg` | dark backgrounds | mark + wordmark, wide lockup |
+| `logo-mono-ink.svg` | light, one-color print | single-color ink, 1:1 square |
+| `logo-mono-gold.svg` | dark, foil / watermark | single-color gilt, 1:1 square |
+| `png/` | anywhere SVG won't do | transparent PNGs — mark at 16–1024 px (all 1:1 square), wordmark at 600/1200/2400 px wide (lockup, intentionally wide) |
+
+For app icons, avatars, or any upload target that requires a square image, use `logo.svg` / `logo-dark.svg` or the `png/logo-*.png` files — never the wordmark lockup.
 
 GitHub README pattern (auto light/dark):
 
