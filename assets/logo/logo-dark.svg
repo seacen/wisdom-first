@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 60" width="640" height="600">
+  <title>wisdom-first</title>
+  <!-- for dark backgrounds · paper #EFE8D8 · gilt #E3B054 -->
+  <path fill="#E3B054" d="M3 20 L27 42 L27 47 L3 26.5 Z"/>
+  <path fill="#EFE8D8" d="M3 26.5 L27 47 L27 52 L3 34 Z"/>
+  <path fill="#E3B054" d="M61 20 L37 42 L37 47 L61 26.5 Z"/>
+  <path fill="#EFE8D8" d="M61 26.5 L37 47 L37 52 L61 34 Z"/>
+  <path fill="#E3B054" d="M32 9 L39.5 28 L32 48 L24.5 28 Z"/>
+</svg>

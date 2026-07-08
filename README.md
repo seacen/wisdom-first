@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-dark.svg">
+    <img src="assets/logo/logo.svg" alt="wisdom-first logo" width="130">
+  </picture>
+</p>
+
 # wisdom-first
 
 > Bring humanity's best thinking to your AI — the right frameworks and books *first*, then the work.

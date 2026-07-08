@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-dark.svg">
+    <img src="assets/logo/logo.svg" alt="wisdom-first logo" width="130">
+  </picture>
+</p>
+
 # wisdom-first
 
 > 把人类最好的思考先带到 AI 面前——先摆出对的框架和书，再动手解决问题。
