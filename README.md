@@ -22,11 +22,11 @@
 
 `wisdom-first` is an [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) — a portable capability that any AI agent can load. Before your assistant improvises an answer to a question that deserves real thought, it reaches for the best thinking humanity has already done on that *kind* of problem: it names two or three complementary frameworks, recommends the best books, distills them, and only then solves your problem **through** those lenses.
 
-## Why this matters: it grows *your* thinking, not just the AI's
+## Why this matters: it widens *your* thinking, not just the AI's
 
 The easy path with AI is to hand over your judgment and take the answer on faith. You get output — but you're left *knowing what without knowing why*, a little more dependent each time.
 
-`wisdom-first` does the opposite. It names the actual frameworks, distills the moves that carry the weight, and points you back to the source books — so every answer doubles as a lesson, not just a verdict for today. The AI does the retrieval and the synthesis; **you keep the wisdom.**
+`wisdom-first` does the opposite. It names the actual frameworks, distills the moves that matter most, and points you back to the source books — so every answer doubles as a lesson, not just a verdict for today. The AI does the retrieval and the synthesis; **you keep the wisdom.**
 
 That's the whole bet — an AI that makes you wiser, not one that makes you dependent.
 
