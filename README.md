@@ -32,13 +32,17 @@ That's the whole bet — an AI that makes you wiser, not one that makes you depe
 
 ## Install
 
-Using the open [`skills`](https://github.com/vercel-labs/skills) CLI — no install needed, just `npx`:
+**Easiest: just ask your agent to install it.** Send it one line:
+
+> Install this skill for me: https://github.com/seacen/wisdom-first
+
+Works with any agent — including the ones the `npx` route below can't reach. Then start a fresh session.
+
+Or use the command line:
 
 ```bash
 npx skills add seacen/wisdom-first
 ```
-
-Then start a fresh agent session — it picks up `SKILL.md` automatically. The `skills` CLI auto-detects whichever agent you're using and installs to the right place.
 
 ## What it does
 

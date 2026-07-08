@@ -32,13 +32,17 @@
 
 ## 安装
 
-用开放的 [`skills`](https://github.com/vercel-labs/skills) CLI——不用装任何东西，一行 `npx` 就够了：
+**最简单：直接让 agent 装。** 发一句话给它：
+
+> 帮我装下这个 skill：https://github.com/seacen/wisdom-first
+
+什么 agent 都行，包括下面 `npx` 覆盖不到的国内工具。装完新开个会话就能用。
+
+也可以走命令行：
 
 ```bash
 npx skills add seacen/wisdom-first
 ```
-
-装完新开一个会话即可——它会自动读取 `SKILL.md`。`skills` CLI 会自动识别你正在用的智能体，并装到对的位置。
 
 ## 它做什么
 
