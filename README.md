@@ -7,7 +7,7 @@
 
 <br>
 
-**Bring humanity's best thinking to your AI — the right frameworks and books <em>first</em>, then the work.**
+**It widens how you think, <em>first</em> — then it solves the problem in front of you.**
 
 **🌐 Language:** **English (this page)** · [**中文**](README.zh-CN.md)
 
@@ -22,15 +22,11 @@
 
 `wisdom-first` is an [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) — a portable capability that any AI agent can load. Before your assistant improvises an answer to a question that deserves real thought, it reaches for the best thinking humanity has already done on that *kind* of problem: it names two or three complementary frameworks, recommends the best books, distills them, and only then solves your problem **through** those lenses.
 
-*A skill that upgrades how an AI thinks, not just what it knows.*
-
 ## Why this matters: it grows *your* thinking, not just the AI's
 
 The easy path with AI is to hand over your judgment and take the answer on faith. You get output — but you're left *knowing what without knowing why*, a little more dependent each time.
 
-`wisdom-first` is built to do the opposite. Because it names the actual frameworks, distills the moves that carry the weight, and points you back to the source books, every answer doubles as a lesson. You walk away with durable mental models and a reading list you can return to — not just a verdict for today.
-
-So the skill isn't only about making the AI reason more systematically. It's about widening *your own* map of how the world works: turning each hard question into a chance to expand the edges of your understanding, so you keep growing your judgment instead of outsourcing it. The AI does the retrieval and the synthesis; **you keep the wisdom.**
+`wisdom-first` does the opposite. It names the actual frameworks, distills the moves that carry the weight, and points you back to the source books — so every answer doubles as a lesson, not just a verdict for today. The AI does the retrieval and the synthesis; **you keep the wisdom.**
 
 That's the whole bet — an AI that makes you wiser, not one that makes you dependent.
 
@@ -54,7 +50,7 @@ When you ask for advice, or take on a substantive task that rewards real thinkin
 
 It triggers on its own for advisory / long-horizon work, or call it explicitly with `/wisdom-first`.
 
-## What makes it interesting
+## How it picks — with no lookup table
 
 The skill contains **no lookup table of "topic → book."** Hard-coding titles would make it brittle and impossible to generalize. Instead, its core ([`references/the-taste.md`](skills/wisdom-first/references/the-taste.md)) is **pure, general *taste*** — a handful of domain-blind judgments about what makes one body of thought better than another for a given need:
 
