@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-> Bring humanity's best thinking to your AI — the right frameworks and books *first*, then the work.
+<p align="center">Bring humanity's best thinking to your AI — the right frameworks and books <em>first</em>, then the work.</p>
 
 **[中文版 README →](README.zh-CN.md)**
 

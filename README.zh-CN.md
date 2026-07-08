@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-> 把人类最好的思考先带到 AI 面前——先摆出对的框架和书，再动手解决问题。
+<p align="center">把人类最好的思考先带到 AI 面前——先摆出对的框架和书，再动手解决问题。</p>
 
 **[English README →](README.md)**
 
