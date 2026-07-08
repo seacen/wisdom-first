@@ -1,11 +1,9 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-dark.svg">
-    <img src="assets/logo/logo.svg" alt="wisdom-first logo" width="130">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-wordmark-dark.svg">
+    <img src="assets/logo/logo-wordmark.svg" alt="wisdom-first" width="420">
   </picture>
 </p>
-
-# wisdom-first
 
 > Bring humanity's best thinking to your AI — the right frameworks and books *first*, then the work.
 
@@ -89,6 +87,8 @@ skills/wisdom-first/
     ├── authors-shelf.md      # optional personal-taste tie-break layer
     └── applying-via-workflow.md  # escalating the "solve" step to a multi-agent Workflow
 .claude-plugin/plugin.json     # Claude Code plugin manifest
+brand.md                       # brand definition — mark, color, type, voice
+assets/logo/                   # logo assets (SVG + PNG) + usage spec
 evals/
 └── evals.json                # acceptance scenarios
 ```

@@ -1,11 +1,9 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-dark.svg">
-    <img src="assets/logo/logo.svg" alt="wisdom-first logo" width="130">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-wordmark-dark.svg">
+    <img src="assets/logo/logo-wordmark.svg" alt="wisdom-first" width="420">
   </picture>
 </p>
-
-# wisdom-first
 
 > 把人类最好的思考先带到 AI 面前——先摆出对的框架和书，再动手解决问题。
 
@@ -89,6 +87,8 @@ skills/wisdom-first/
     ├── authors-shelf.md      # 可选的个人偏好层（仅用于打破平局）
     └── applying-via-workflow.md  # 把「解题」这一步升级为多智能体 Workflow
 .claude-plugin/plugin.json     # Claude Code 插件清单
+brand.md                       # 品牌定义——图形、用色、字体、语调
+assets/logo/                   # logo 资产（SVG + PNG）与用法规范
 evals/
 └── evals.json                # 验收场景
 ```
