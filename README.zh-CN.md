@@ -1,13 +1,24 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-wordmark-dark.svg">
-    <img src="assets/logo/logo-wordmark.svg" alt="wisdom-first" width="420">
-  </picture>
-</p>
+<div align="center">
 
-<p align="center">把人类最好的思考先带到 AI 面前——先摆出对的框架和书，再动手解决问题。</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-wordmark-dark.svg">
+  <img src="assets/logo/logo-wordmark.svg" alt="wisdom-first" width="420">
+</picture>
 
-**[English README →](README.md)**
+<br>
+
+**把人类最好的思考先带到 AI 面前——先摆出对的框架和书，再动手解决问题。**
+
+**🌐 Language:** [**English**](README.md) · **中文（本页）**
+
+[![version](https://img.shields.io/badge/version-3.0.0-EFE8D8?style=flat-square&labelColor=1B2C40)](https://github.com/seacen/wisdom-first/releases/tag/v3.0.0)
+[![license](https://img.shields.io/badge/license-MIT-EFE8D8?style=flat-square&labelColor=1B2C40)](LICENSE)
+[![format](https://img.shields.io/badge/format-Agent%20Skill-EFE8D8?style=flat-square&labelColor=1B2C40)](https://docs.claude.com/en/docs/agents-and-tools/agent-skills)
+[![install](https://img.shields.io/badge/install-skills%20CLI-EFE8D8?style=flat-square&labelColor=1B2C40)](https://github.com/vercel-labs/skills)
+
+</div>
+
+---
 
 `wisdom-first` 是一个 [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills)——一份任何 AI 智能体都能加载的通用能力。当你抛给助手一个值得认真想想的问题时，它不会张口就来、即兴作答，而是先去调取人类在这"类"问题上早已沉淀下来的最好思考：点出两三个互补的框架、推荐最值得读的书、把精华提炼出来，然后**透过这些视角**来解决你的问题。
 

@@ -1,13 +1,24 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-wordmark-dark.svg">
-    <img src="assets/logo/logo-wordmark.svg" alt="wisdom-first" width="420">
-  </picture>
-</p>
+<div align="center">
 
-<p align="center">Bring humanity's best thinking to your AI — the right frameworks and books <em>first</em>, then the work.</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo/logo-wordmark-dark.svg">
+  <img src="assets/logo/logo-wordmark.svg" alt="wisdom-first" width="420">
+</picture>
 
-**[中文版 README →](README.zh-CN.md)**
+<br>
+
+**Bring humanity's best thinking to your AI — the right frameworks and books <em>first</em>, then the work.**
+
+**🌐 Language:** **English (this page)** · [**中文**](README.zh-CN.md)
+
+[![version](https://img.shields.io/badge/version-3.0.0-EFE8D8?style=flat-square&labelColor=1B2C40)](https://github.com/seacen/wisdom-first/releases/tag/v3.0.0)
+[![license](https://img.shields.io/badge/license-MIT-EFE8D8?style=flat-square&labelColor=1B2C40)](LICENSE)
+[![format](https://img.shields.io/badge/format-Agent%20Skill-EFE8D8?style=flat-square&labelColor=1B2C40)](https://docs.claude.com/en/docs/agents-and-tools/agent-skills)
+[![install](https://img.shields.io/badge/install-skills%20CLI-EFE8D8?style=flat-square&labelColor=1B2C40)](https://github.com/vercel-labs/skills)
+
+</div>
+
+---
 
 `wisdom-first` is an [Agent Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills) — a portable capability that any AI agent can load. Before your assistant improvises an answer to a question that deserves real thought, it reaches for the best thinking humanity has already done on that *kind* of problem: it names two or three complementary frameworks, recommends the best books, distills them, and only then solves your problem **through** those lenses.
 
