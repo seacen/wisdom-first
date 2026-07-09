@@ -7,7 +7,7 @@
 
 <br>
 
-**It widens how you think, <em>first</em> — then it solves the problem in front of you.**
+**It reaches for humanity's best thinking and widens your own, <em>first</em> — then solves the problem in front of you.**
 
 **🌐 Language:** **English (this page)** · [**中文**](README.zh-CN.md)
 
